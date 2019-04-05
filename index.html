@@ -13,7 +13,10 @@ function showNumber(){
          alert("the number is smaller.¡Try next time!")
     }else if(number > magicNumber){
         alert("the number is greater.¡Try next time!")
-    }
+    } }
+ function myFunction() {
+     console.log("sample", document.getElementById("demo"))
+  document.getElementById("demo").innerHTML = "Yey!";
 }
 
 
@@ -29,7 +32,7 @@ function showNumber(){
       <input type="submit" value="Guess!">
     </div>
     <img src="descarga.jpg" width="300" height="300">
-
+    <p id="demo" onclick="myFunction()">This is it.</p>
   </form>
 
 
