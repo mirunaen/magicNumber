@@ -1,12 +1,32 @@
 <h1 style="color:blue">Mi primera cabecerass</h1>
 
 
-<form action="" method="get" class="form-example">
+<script>
+
+function showNumber(){
+    var magicNumber = 5;
+    var number=document.getElementById("magicNumber").value;
+
+    if(number == magicNumber){
+        alert("is correct")
+    }else if(number < magicNumber){
+         alert("the number is smaller")
+    }
+}
+
+
+</script>
+
+
+<form action="" method="get" class="form-example" name="form1">
     <div class="form-example">
       <label for="name">Enter your magic number: </label>
-      <input name="number" type="number" value="0" maxlength="2"/>  
+      <input id="magicNumber" onchange="showNumber()" name="number" type="number" value="0" maxlength="2"/>  
     </div>
     <div class="form-example">
       <input type="submit" value="Guess!">
     </div>
   </form>
+
+
+  <script>
