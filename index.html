@@ -1,4 +1,4 @@
-<h1 style="color:blue">Mi primera cabecerass</h1>
+<h1 style="color:blue">Mi primera cabecera</h1>
 
 
 <script>
@@ -8,9 +8,11 @@ function showNumber(){
     var number=document.getElementById("magicNumber").value;
 
     if(number == magicNumber){
-        alert("is correct")
+        alert("is correct!")
     }else if(number < magicNumber){
-         alert("the number is smaller")
+         alert("the number is smaller.¡Try next time!")
+    }else if(number > magicNumber){
+        alert("the number is greater.¡Try next time!")
     }
 }
 
@@ -26,6 +28,8 @@ function showNumber(){
     <div class="form-example">
       <input type="submit" value="Guess!">
     </div>
+    <img src="descarga.jpg" width="300" height="300">
+
   </form>
 
 
