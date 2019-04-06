@@ -1,47 +1,22 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+<script type="text/javascript" src="script.js"></script>
+
+
+<link rel="stylesheet" href="style.css">
+
+
 <h1 style="color:blue">Mi primera cabecera</h1>
-
-
-<script>
-    var magicNumber = Math.floor(Math.random() * 11);;
-
-    function showNumber() {
-        
-        var number = document.getElementById("magicNumber").value;
-
-        document.getElementById("demo").innerHTML = magicNumber;
-
-        if (number == magicNumber) {
-            alert("is correct")
-            alert("is correct!")
-        } else if (number < magicNumber) {
-            alert("the number is smaller")
-            alert("the number is smaller.¡Try next time!")
-        } else if (number > magicNumber) {
-            alert("the number is greater.¡Try next time!")
-        }
-
-
-    }
-
-    function magicProcess() {
-        console.log("sample", document.getElementById("demo"))
-        document.getElementById("demo").innerHTML = "Yey!";
-    }
-    function showMeTheNumber() {
-     alert(magicNumber)
-    }
-
-
-</script>
-
 
 <form action="" method="get" class="form-example" name="form1">
     <div class="form-example">
-        <label for="name">Enter your magic number: </label>
-        <input id="magicNumber" name="number" type="number" value="0" maxlength="2" />
+        <h3 for="name">Enter your magic number: </h3>
+        <br>
+        <input id="magicNumber" name="number" type="number" value="0" maxlength="2" class="inputField" />
     </div>
     <div class="form-example">
-        <button type="submit" onclick="showNumber()">Submit</button>
+        <button type="submit" onclick="showNumber()"  class="btn btn-primary">Submit</button>
     </div>
     <img src="descarga.jpg" width="300" height="300">
     <p onclick="magicProcess()" id="demo">This is it.</p>
@@ -50,5 +25,3 @@
     <button type="button" onclick="showMeTheNumber()">Click Me! </button>
 </form>
 
-
-<script>
