@@ -2,22 +2,34 @@
 
 
 <script>
+    var magicNumber = Math.floor(Math.random() * 11);;
 
-function showNumber(){
-    var magicNumber = 5;
-    var number=document.getElementById("magicNumber").value;
+    function showNumber() {
+        
+        var number = document.getElementById("magicNumber").value;
 
-    if(number == magicNumber){
-        alert("is correct!")
-    }else if(number < magicNumber){
-         alert("the number is smaller.¡Try next time!")
-    }else if(number > magicNumber){
-        alert("the number is greater.¡Try next time!")
-    } }
- function myFunction() {
-     console.log("sample", document.getElementById("demo"))
-  document.getElementById("demo").innerHTML = "Yey!";
-}
+        document.getElementById("demo").innerHTML = magicNumber;
+
+        if (number == magicNumber) {
+            alert("is correct")
+            alert("is correct!")
+        } else if (number < magicNumber) {
+            alert("the number is smaller")
+            alert("the number is smaller.¡Try next time!")
+        } else if (number > magicNumber) {
+            alert("the number is greater.¡Try next time!")
+        }
+
+
+    }
+
+    function magicProcess() {
+        console.log("sample", document.getElementById("demo"))
+        document.getElementById("demo").innerHTML = "Yey!";
+    }
+    function showMeTheNumber() {
+     alert(magicNumber)
+    }
 
 
 </script>
@@ -25,15 +37,18 @@ function showNumber(){
 
 <form action="" method="get" class="form-example" name="form1">
     <div class="form-example">
-      <label for="name">Enter your magic number: </label>
-      <input id="magicNumber" onchange="showNumber()" name="number" type="number" value="0" maxlength="2"/>  
+        <label for="name">Enter your magic number: </label>
+        <input id="magicNumber" name="number" type="number" value="0" maxlength="2" />
     </div>
     <div class="form-example">
-      <input type="submit" value="Guess!">
+        <button type="submit" onclick="showNumber()">Submit</button>
     </div>
     <img src="descarga.jpg" width="300" height="300">
-    <p id="demo" onclick="myFunction()">This is it.</p>
-  </form>
+    <p onclick="magicProcess()" id="demo">This is it.</p>
 
 
-  <script>
+    <button type="button" onclick="showMeTheNumber()">Click Me! </button>
+</form>
+
+
+<script>
