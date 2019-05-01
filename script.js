@@ -1,28 +1,26 @@
 var magicNumber = Math.floor(Math.random() * 11);
 
-function showNumber() {
+ function showNumber() {
 
-    var number = document.getElementById("magicNumber").value;
+     var number = document.getElementById("magicNumber").value;
 
-    document.getElementById("demo").innerHTML = magicNumber;
+     document.getElementById("demo").innerHTML = magicNumber;
 
-    if (number == magicNumber) {
-        alert("is correct!")
+     if (number == magicNumber) {
+        alert("Correct!")
     } else if (number < magicNumber) {
-        alert("the number is smaller.Try next time!")
+        alert("The number is smaller.Try next time!")
     } else if (number > magicNumber) {
-        alert("the number is greater.Try next time!")
+        alert("The number is greater.Try next time!")
     }
 
 
-}
+ }
 
-function magicProcess() {
+ function magicProcess() {
     console.log("sample", document.getElementById("demo"))
     document.getElementById("demo").innerHTML = "Yey!";
 }
 function showMeTheNumber() {
     alert(magicNumber)
 }
-
-
